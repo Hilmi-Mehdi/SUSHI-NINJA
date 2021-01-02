@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DiasGames.ThirdPersonSystem
+namespace SushiNinja.ThirdPersonSystem
 {
     public enum InputEnterType { ButtonDown, ButtonPressing, ButtonReleased, Noone }
 
