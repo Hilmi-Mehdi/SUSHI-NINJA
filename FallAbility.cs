@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DiasGames.ThirdPersonSystem
+namespace SushiNinja.ThirdPersonSystem
 {
     public class FallAbility : ThirdPersonAbility
     {
