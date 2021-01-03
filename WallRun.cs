@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DiasGames.ThirdPersonSystem.ClimbingSystem
+namespace SushiNinja.ThirdPersonSystem
 {
     public enum WallDirection { Left, Right}
 
@@ -30,13 +30,6 @@ namespace DiasGames.ThirdPersonSystem.ClimbingSystem
             if (wallReference == null)
                 wallReference = new GameObject("Wall Reference Object").transform;
         }
-
-        /// <summary>
-        /// Cast three rays against wall to detect wall to run
-        /// </summary>
-        /// <param name="hit">Hit result from cast</param>
-        /// <param name="direction">Direction to cast</param>
-        /// <returns></returns>
         private bool CastSide(out RaycastHit hit, Vector3 direction, Vector3 aidDirection)
         {
             RaycastHit front, back;
@@ -59,25 +52,13 @@ namespace DiasGames.ThirdPersonSystem.ClimbingSystem
 
             return false;
         }
-
-        /// <summary>
-        /// Cast three rays against wall to detect wall to run
-        /// </summary>
-        /// <param name="hit">Hit result from cast</param>
-        /// <param name="direction">Direction to cast</param>
-        /// <returns></returns>
         private bool CastSide(out RaycastHit hit, Vector3 direction)
         {
             return CastSide(out hit, direction, transform.forward);
         }
-
-        /// <summary>
-        /// Casts a capsule to find a wall on right or left
-        /// </summary>
-        /// <returns></returns>
         private bool FoundWall()
         {
-            if (m_System.ActiveAbility == m_ClimbJump)// && (m_Engine.LastAbility is ThirdPersonAbstractClimbing || m_Engine.LastAbility is LadderAbility))
+            if (m_System.ActiveAbility == m_ClimbJump)
             {
                 if (m_ClimbJump.JumpType == ClimbJumpType.Right ||
                 m_ClimbJump.JumpType == ClimbJumpType.Left)
