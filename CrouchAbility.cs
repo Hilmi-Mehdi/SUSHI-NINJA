@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DiasGames.ThirdPersonSystem
+namespace SushiNinja.ThirdPersonSystem
 {
     public class CrouchAbility : ThirdPersonAbility
     {
