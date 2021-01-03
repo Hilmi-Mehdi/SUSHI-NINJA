@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DiasGames.ThirdPersonSystem.ClimbingSystem
+namespace SushiNinja.ThirdPersonSystem.ClimbingSystem
 {
     public class LadderAbility : ThirdPersonAbility
     {
@@ -194,7 +194,6 @@ namespace DiasGames.ThirdPersonSystem.ClimbingSystem
             {
                 if (m_InputManager.jumpButton.WasPressed)
                 {
-                    // Side Jumps
                     if (m_InputManager.Move.x > 0.5f)
                     {
                         SetState(m_HopRightStart);
