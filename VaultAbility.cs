@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DiasGames.ThirdPersonSystem.ClimbingSystem
+namespace SushiNinja.ThirdPersonSystem
 {
-    public class VaultAbility : ThirdPersonAbstractClimbing
+    public class VaultAbility
     {
         [SerializeField] private float m_MaxVaultThickness = 0.3f;
 
